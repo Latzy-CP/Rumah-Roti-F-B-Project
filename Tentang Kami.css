@@ -1,0 +1,265 @@
+html {
+	height: 100%;
+	width: 100%;
+  	background-image: url(Assets/img\ background.png);
+	background-size: 100%;
+	background-position: center;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.container {
+	display: flex;
+	width: 99%;
+	background-color: burlywood;
+	margin: 10px auto 0 auto;
+	height: 50px;
+	border-radius: 20px;
+}
+
+.navbar-right {
+	display: inline-flex;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 5px;
+	list-style-type: none;
+}
+
+.nav-link {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #333;
+	border-radius: 25px;
+	transition: background-color 0.3s ease;
+}
+
+.logo-brand {
+	margin-left: 2vw;
+	align-items: center;
+}
+
+.nav-item :active {
+	color: brown;
+}
+
+.nav-item :hover {
+	background-color: brown;
+}
+
+.nav-item :visited{
+	color: white;
+}
+
+/* Title and Description Styles */
+.cont-desc {
+	display: flex;
+}
+
+.cont-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.desc-title {
+	margin: 20%;
+	font-size: 3.5vw;
+	text-align: left;
+	
+}
+
+.img-title {
+	width: 50vw;
+	height: 50vw;
+	margin: 0;
+}
+
+hr {
+	border-color: brown;
+	border-style: dashed;
+	border-width: 2px;
+	text-align: center;
+}
+
+/* Best Seller Styles */
+.bs-title-cont {
+	text-align: center;
+}
+
+.bs-title {
+	display: inline-block;
+	text-align: center;
+	font-size: 3vw;
+	margin-top: 24px;
+	background-color: brown;
+	padding: 2px 6vw;
+	border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 2vh;
+	color: white;
+}
+
+.bs-menu-cont {
+	display: block;
+	margin: 0 auto;
+}
+
+.bs-list {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+
+.bs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: flex-end;
+    height: 100%;             
+    min-height: 220px;        
+    box-sizing: border-box;
+}
+
+.bs-item img {
+	display: block;
+	margin: 0 auto;
+	height: 15vw;
+	padding: 1vw 2.75vw;
+	opacity: 75%;
+}
+
+@media (max-width: 480px) {
+    .bs-title {
+        margin-bottom: 1vh;   
+        padding: 2px 1vw;    
+    }
+    .bs-item img {
+        padding-top: 0.5vw;   
+        padding-bottom: 1vw;  
+    }
+}
+
+@media (max-width: 600px) {
+    .bs-title {
+        margin-bottom: 0.5vh;
+		padding: 2px 3vw;
+    }
+}
+
+.bs-list :hover {
+	opacity: 100%;
+	transform: scale(1.1);
+}
+
+.bs-item p {
+	margin-top: 1vh;    
+    margin-bottom: 2vh;         
+    text-align: center;
+	font-size: 1.2vw;
+	padding: 0.5vw 0;
+}
+
+@media (max-width: 480px) {
+    .bs-item p {
+        font-size: 1em;    
+        padding: 4px 0;    
+    }
+}
+
+.bs-cont {
+	display: block;
+	max-width: 1920px;
+}
+
+/* Button Styles */
+.bs-button {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	text-decoration: none;
+	margin-bottom: 24px;
+	margin-top: 40px;
+}
+
+.button-menu {
+	align-items: center;
+	background-color: brown;
+	border: 0;
+	border-radius: 100px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 1.1em;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 20px;
+	max-width: 90vw;
+	min-height: 40px;
+	min-width: 0px;
+	overflow: hidden;
+	padding: 0.5em 2em;
+	text-align: center;
+	touch-action: manipulation;
+	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	user-select: none;
+	-webkit-user-select: none;
+	vertical-align: middle;
+	
+}
+
+@media (max-width: 480px) {
+    .button-menu {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+}
+
+.button-menu:hover,
+.button-menu:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-menu:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-menu:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+/* Footer */
+
+footer {
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #6c757d;
+}
+
+footer p {
+	margin: 0;
+	color: white	;
+}
+
+footer a {
+    color: white;
+}
